@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Aéreo - Inicio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #005bbb, #00aaff);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            color: #003a63;
+            width: 260px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido al Sistema de Reservas Aéreas</h1>
+    <p>Gestiona vuelos, pasajeros, reservas, tripulación y más.</p>
+</header>
+
+<div class="container">
+
+    <a class="card" href="/aerolinea/">
+        <h3>Aerolíneas</h3>
+        <p>Consulta y administra aerolíneas.</p>
+    </a>
+
+    <a class="card" href="/aeropuerto/">
+        <h3>Aeropuertos</h3>
+        <p>Lista y registros de aeropuertos.</p>
+    </a>
+
+    <a class="card" href="/vuelo/">
+        <h3>Vuelos</h3>
+        <p>Información completa de vuelos.</p>
+    </a>
+
+    <a class="card" href="/asientos/">
+        <h3>Asientos</h3>
+        <p>Visualiza y administra asientos.</p>
+    </a>
+
+    <a class="card" href="/tripulacion/">
+        <h3>Tripulación</h3>
+        <p>Registros de pilotos y auxiliares.</p>
+    </a>
+
+    <a class="card" href="/asignaciontripulacion/">
+        <h3>Asignación Tripulación</h3>
+        <p>Roles y turnos por vuelo.</p>
+    </a>
+
+    <a class="card" href="/pasajero/">
+        <h3>Pasajeros</h3>
+        <p>Información y registro de pasajeros.</p>
+    </a>
+
+    <a class="card" href="/reserva/">
+        <h3>Reservas</h3>
+        <p>Crea y consulta reservas.</p>
+    </a>
+
+    <a class="card" href="/detalle_reserva/">
+        <h3>Detalle de Reservas</h3>
+        <p>Información específica de cada reserva.</p>
+    </a>
+
+    <a class="card" href="/equipaje/">
+        <h3>Equipaje</h3>
+        <p>Gestión de equipaje por pasajero.</p>
+    </a>
+
+</div>
+
+<footer>
+    <p>Sistema desarrollado en Django — CRUD + API + Templates</p>
+</footer>
+
+</body>
+</html>
